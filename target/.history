@@ -1,0 +1,18 @@
+update
+reload
+update 
+clean compile
+clean
+compile
+update plugins
+reload plugins
+test
+clena
+clean
+compile
+test
+assembly
+test
+assembly
+test
+assembly

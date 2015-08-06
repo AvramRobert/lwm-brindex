@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.propensive
+Implementation-Title: rapture-core
+Implementation-Version: 1.1.0
+Implementation-Vendor-Id: com.propensive
+Specification-Vendor: com.propensive
+Specification-Title: rapture-core
+Implementation-URL: http://rapture.io
+Specification-Version: 1.1.0
+Main-Class: null
+

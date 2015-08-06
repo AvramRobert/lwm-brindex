@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="lwm-brindex$sources_javadoc_2.11"
+		revision="1.0"
+		conf="test-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150805222414"/>
+	<dependencies>
+		<module organisation="com.propensive" name="rapture-json-play_2.11">
+			<revision name="1.1.0" status="release" pubdate="20141228225748" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://rapture.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json-play_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-json-play_2.11/1.1.0/rapture-json-play_2.11-1.1.0.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="rapture-json-play_2.11" type="jar" ext="jar" status="no" details="" size="18432" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json-play_2.11/jars/rapture-json-play_2.11-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json-play_2.11/1.1.0/rapture-json-play_2.11-1.1.0.jar"/>
+					</artifact>
+					<artifact name="rapture-json-play_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5090" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json-play_2.11/srcs/rapture-json-play_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json-play_2.11/1.1.0/rapture-json-play_2.11-1.1.0-sources.jar"/>
+					</artifact>
+					<artifact name="rapture-json-play_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="370512" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json-play_2.11/docs/rapture-json-play_2.11-1.1.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json-play_2.11/1.1.0/rapture-json-play_2.11-1.1.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-json_2.11">
+			<revision name="2.4.0-M1" status="release" pubdate="20140821045344" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4407" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.4.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.4.0-M1/play-json_2.11-2.4.0-M1.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.0-M1" rev-constraint-default="2.4.0-M1" rev-constraint-dynamic="2.4.0-M1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="play-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="28952" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-json_2.11/srcs/play-json_2.11-2.4.0-M1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.4.0-M1/play-json_2.11-2.4.0-M1-sources.jar"/>
+					</artifact>
+					<artifact name="play-json_2.11" type="jar" ext="jar" status="no" details="" size="522257" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.0-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.4.0-M1/play-json_2.11-2.4.0-M1.jar"/>
+					</artifact>
+					<artifact name="play-json_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="675206" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-json_2.11/docs/play-json_2.11-2.4.0-M1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.4.0-M1/play-json_2.11-2.4.0-M1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.3.2" status="release" pubdate="20140302041312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<metadata-artifact status="no" details="" size="7259" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="753006" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-databind" type="jar" ext="jar" status="no" details="" size="915096" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.jar"/>
+					</artifact>
+					<artifact name="jackson-databind" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4032554" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/docs/jackson-databind-2.3.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.3.2" status="release" pubdate="20140301023539" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="19">
+				<metadata-artifact status="no" details="" size="4859" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="255553" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/docs/jackson-annotations-2.3.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="39607" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-annotations" type="jar" ext="jar" status="no" details="" size="36521" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.3.2" status="release" pubdate="20140301023828" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<metadata-artifact status="no" details="" size="5479" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-core" type="jar" ext="jar" status="no" details="" size="199553" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="823616" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/docs/jackson-core-2.3.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="233763" time="0" location="/home/ravram/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.6" status="release" pubdate="20140127193743" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6122" time="0" location="/home/ravram/.ivy2/cache/org.joda/joda-convert/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="joda-convert" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="95975" time="0" location="/home/ravram/.ivy2/cache/org.joda/joda-convert/docs/joda-convert-1.6-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-javadoc.jar"/>
+					</artifact>
+					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36436" time="0" location="/home/ravram/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6-sources.jar"/>
+					</artifact>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="98818" time="0" location="/home/ravram/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.6/joda-convert-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.3" status="release" pubdate="20130816193125" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6376" time="0" location="/home/ravram/.ivy2/cache/joda-time/joda-time/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="718287" time="0" location="/home/ravram/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3-sources.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="581571" time="0" location="/home/ravram/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1301413" time="0" location="/home/ravram/.ivy2/cache/joda-time/joda-time/docs/joda-time-2.3-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-datacommons_2.11">
+			<revision name="2.4.0-M1" status="release" pubdate="20140821045250" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2548" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/ivy-2.4.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.4.0-M1/play-datacommons_2.11-2.4.0-M1.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.0-M1" rev-constraint-default="2.4.0-M1" rev-constraint-dynamic="2.4.0-M1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="play-datacommons_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1458" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/srcs/play-datacommons_2.11-2.4.0-M1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.4.0-M1/play-datacommons_2.11-2.4.0-M1-sources.jar"/>
+					</artifact>
+					<artifact name="play-datacommons_2.11" type="jar" ext="jar" status="no" details="" size="5331" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.0-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.4.0-M1/play-datacommons_2.11-2.4.0-M1.jar"/>
+					</artifact>
+					<artifact name="play-datacommons_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="353349" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/docs/play-datacommons_2.11-2.4.0-M1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-datacommons_2.11/2.4.0-M1/play-datacommons_2.11-2.4.0-M1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.11">
+			<revision name="2.4.0-M1" status="release" pubdate="20140821045326" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2545" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.4.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.4.0-M1/play-functional_2.11-2.4.0-M1.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.0-M1" rev-constraint-default="2.4.0-M1" rev-constraint-dynamic="2.4.0-M1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="play-functional_2.11" type="jar" ext="jar" status="no" details="" size="373184" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.0-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.4.0-M1/play-functional_2.11-2.4.0-M1.jar"/>
+					</artifact>
+					<artifact name="play-functional_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9507" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-functional_2.11/srcs/play-functional_2.11-2.4.0-M1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.4.0-M1/play-functional_2.11-2.4.0-M1-sources.jar"/>
+					</artifact>
+					<artifact name="play-functional_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="527105" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-functional_2.11/docs/play-functional_2.11-2.4.0-M1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.4.0-M1/play-functional_2.11-2.4.0-M1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-iteratees_2.11">
+			<revision name="2.4.0-M1" status="release" pubdate="20140821045332" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3325" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/ivy-2.4.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.4.0-M1/play-iteratees_2.11-2.4.0-M1.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.4.0-M1" rev-constraint-default="2.4.0-M1" rev-constraint-dynamic="2.4.0-M1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="play-iteratees_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="538219" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/docs/play-iteratees_2.11-2.4.0-M1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.4.0-M1/play-iteratees_2.11-2.4.0-M1-javadoc.jar"/>
+					</artifact>
+					<artifact name="play-iteratees_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="32821" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/srcs/play-iteratees_2.11-2.4.0-M1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.4.0-M1/play-iteratees_2.11-2.4.0-M1-sources.jar"/>
+					</artifact>
+					<artifact name="play-iteratees_2.11" type="jar" ext="jar" status="no" details="" size="729957" time="0" location="/home/ravram/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.0-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-iteratees_2.11/2.4.0-M1/play-iteratees_2.11-2.4.0-M1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502165416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2752" time="0" location="/home/ravram/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="147508" time="0" location="/home/ravram/.ivy2/cache/com.typesafe/config/docs/config-1.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="config" type="jar" ext="jar" status="no" details="" size="219554" time="0" location="/home/ravram/.ivy2/cache/com.typesafe/config/jars/config-1.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="132611" time="0" location="/home/ravram/.ivy2/cache/com.typesafe/config/srcs/config-1.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-stm" name="scala-stm_2.11">
+			<revision name="0.7" status="release" pubdate="20140418064442" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nbronson.github.com/scala-stm/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+				<license name="BSD" url="https://github.com/nbronson/scala-stm/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2537" time="0" location="/home/ravram/.ivy2/cache/org.scala-stm/scala-stm_2.11/ivy-0.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.7" rev-constraint-default="0.7" rev-constraint-dynamic="0.7" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-stm_2.11" type="jar" ext="jar" status="no" details="" size="630306" time="0" location="/home/ravram/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7.jar"/>
+					</artifact>
+					<artifact name="scala-stm_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="116149" time="0" location="/home/ravram/.ivy2/cache/org.scala-stm/scala-stm_2.11/srcs/scala-stm_2.11-0.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7-sources.jar"/>
+					</artifact>
+					<artifact name="scala-stm_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="929219" time="0" location="/home/ravram/.ivy2/cache/org.scala-stm/scala-stm_2.11/docs/scala-stm_2.11-0.7-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-json_2.11">
+			<revision name="1.1.0" status="release" pubdate="20141228225045" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://rapture.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3064" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-json_2.11/1.1.0/rapture-json_2.11-1.1.0.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="rapture-json_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="492755" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json_2.11/docs/rapture-json_2.11-1.1.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json_2.11/1.1.0/rapture-json_2.11-1.1.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="rapture-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15526" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json_2.11/srcs/rapture-json_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json_2.11/1.1.0/rapture-json_2.11-1.1.0-sources.jar"/>
+					</artifact>
+					<artifact name="rapture-json_2.11" type="jar" ext="jar" status="no" details="" size="159692" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-json_2.11/jars/rapture-json_2.11-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json_2.11/1.1.0/rapture-json_2.11-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.2" status="release" pubdate="20140723084535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2803" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42219" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2-sources.jar"/>
+					</artifact>
+					<artifact name="scala-parser-combinators_2.11" type="jar" ext="jar" status="no" details="" size="416065" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/jars/scala-parser-combinators_2.11-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar"/>
+					</artifact>
+					<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="694259" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/docs/scala-parser-combinators_2.11-1.0.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-data_2.11">
+			<revision name="1.1.0" status="release" pubdate="20141228224830" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://rapture.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2890" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-data_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-data_2.11/1.1.0/rapture-data_2.11-1.1.0.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="rapture-data_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="506818" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-data_2.11/docs/rapture-data_2.11-1.1.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-data_2.11/1.1.0/rapture-data_2.11-1.1.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="rapture-data_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="12933" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-data_2.11/srcs/rapture-data_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-data_2.11/1.1.0/rapture-data_2.11-1.1.0-sources.jar"/>
+					</artifact>
+					<artifact name="rapture-data_2.11" type="jar" ext="jar" status="no" details="" size="211551" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-data_2.11/jars/rapture-data_2.11-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-data_2.11/1.1.0/rapture-data_2.11-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-core_2.11">
+			<revision name="1.1.0" status="release" pubdate="20141228224608" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://rapture.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2820" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-core_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-core_2.11/1.1.0/rapture-core_2.11-1.1.0.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="rapture-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11362" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-core_2.11/srcs/rapture-core_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-core_2.11/1.1.0/rapture-core_2.11-1.1.0-sources.jar"/>
+					</artifact>
+					<artifact name="rapture-core_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="527380" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-core_2.11/docs/rapture-core_2.11-1.1.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-core_2.11/1.1.0/rapture-core_2.11-1.1.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="rapture-core_2.11" type="jar" ext="jar" status="no" details="" size="125481" time="0" location="/home/ravram/.ivy2/cache/com.propensive/rapture-core_2.11/jars/rapture-core_2.11-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-core_2.11/1.1.0/rapture-core_2.11-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.4" status="release" pubdate="20141023173505" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.4/scala-reflect-2.11.4.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.4/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4387959" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.4/scala-reflect-2.11.4.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="559287" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.4/scala-reflect-2.11.4-sources.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3624636" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.11.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.4/scala-reflect-2.11.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaj" name="scalaj-http_2.11">
+			<revision name="1.1.5" status="release" pubdate="20150701212715" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scalaj/scalaj-http" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3032" time="0" location="/home/ravram/.ivy2/cache/org.scalaj/scalaj-http_2.11/ivy-1.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.11/1.1.5/scalaj-http_2.11-1.1.5.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.1.5" rev-constraint-default="1.1.5" rev-constraint-dynamic="1.1.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalaj-http_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="12107" time="0" location="/home/ravram/.ivy2/cache/org.scalaj/scalaj-http_2.11/srcs/scalaj-http_2.11-1.1.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.11/1.1.5/scalaj-http_2.11-1.1.5-sources.jar"/>
+					</artifact>
+					<artifact name="scalaj-http_2.11" type="jar" ext="jar" status="no" details="" size="107678" time="0" location="/home/ravram/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-1.1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.11/1.1.5/scalaj-http_2.11-1.1.5.jar"/>
+					</artifact>
+					<artifact name="scalaj-http_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="396514" time="0" location="/home/ravram/.ivy2/cache/org.scalaj/scalaj-http_2.11/docs/scalaj-http_2.11-1.1.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.11/1.1.5/scalaj-http_2.11-1.1.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="2.2.5" status="release" pubdate="20150514112034" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4845" time="0" location="/home/ravram/.ivy2/cache/org.scalatest/scalatest_2.11/ivy-2.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.2.5" rev-constraint-default="2.2.5" rev-constraint-dynamic="2.2.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="7960684" time="0" location="/home/ravram/.ivy2/cache/org.scalatest/scalatest_2.11/docs/scalatest_2.11-2.2.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1438901" time="0" location="/home/ravram/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-2.2.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-sources.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="jar" ext="jar" status="no" details="" size="7185879" time="0" location="/home/ravram/.ivy2/cache/org.scalatest/scalatest_2.11/jars/scalatest_2.11-2.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.2" status="release" pubdate="20140520101040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3011" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109171" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1225359" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/docs/scala-xml_2.11-1.0.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="no" details="" size="648678" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/jars/scala-xml_2.11-1.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.7" status="release" pubdate="20150622221702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="default" name="lwm-brindex$sources_javadoc_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/"/>
+				<artifacts>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="22812957" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.11.7-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="908307" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5745606" time="0" location="/home/ravram/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

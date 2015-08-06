@@ -1,0 +1,8 @@
+[0m[[0minfo[0m] [0m[32mCommadLineParserTest:[0m[0m
+[0m[[0minfo[0m] [0m[32mA command line parser[0m[0m
+[0m[[0minfo[0m] [0m[32m  when parsing input[0m[0m
+[0m[[0minfo[0m] [0m[32m  - should distinguish parameter and value[0m[0m
+[0m[[0minfo[0m] [0m[32m  - should only accept key-value pairs[0m[0m
+[0m[[0minfo[0m] [0m[32m  - should allow quoted values[0m[0m
+[0m[[0minfo[0m] [0m[32m  - should allow all of these possible input permutations[0m[0m
+[0m[[0minfo[0m] [0m[32m  - should not allow the following input permutations[0m[0m
