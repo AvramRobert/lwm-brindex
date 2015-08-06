@@ -14,10 +14,10 @@ object Main extends CommandLineApp {
   )
 
   override def run: (String) => Transition[Command, _] = {
-    case "add" => syntaxCheck() & code() ~> json() ~> postJson("http://localhost:9000/indexer") ~> fromJson()
-    case "list" => syntaxCheck() & get("http://localhost:9000/cmd/indexer") ~> fromJson()
-    case "find" => syntaxCheck() & find() ~> get("http://localhost:9000/cmd/indexer/find") ~> fromJson()
-    case "edit" => syntaxCheck() & edit() ~> json() ~> putJson("http://localhost:9000/indexer") ~> fromJson()
+    case "add" => syntaxCheck() & code() ~> json() ~> postJson("http://192.168.0.100:9000/indexer") ~> fromJson()
+    case "list" => syntaxCheck() & get("http://192.168.0.100:9000/cmd/indexer") ~> fromJson()
+    case "find" => syntaxCheck() & find() ~> get("http://192.168.0.100:9000/cmd/indexer/find") ~> fromJson()
+    case "edit" => syntaxCheck() & edit() ~> json() ~> putJson("http://192.168.0.100:9000/indexer") ~> fromJson()
     case _ => failed("Unknown action")
   }
 }
