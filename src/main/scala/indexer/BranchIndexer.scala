@@ -23,7 +23,8 @@ object BranchIndexer {
     js.asOpt[JsObject] match {
       case Some(jsObj) => Success {
         (jsObj.value.toVector.sortBy(_._1) map {
-          case (k, v) => String.format("%10s   %s  %s", k, s"${(v \ "task").as[String]} [${(v \ "status").as[String]}]  ->", s"${(v \ "card").as[String]}")
+          case (k, v) if k != "msg" => String.format("%10s   %s  %s", k, s"${(v \ "task").as[String]} [${(v \ "status").as[String]}]  ->", s"${(v \ "card").as[String]}")
+          case (k, v) => v.as[String]
         }).mkString("\n")
       }
       case None => Failure("No viable input received while parsing")
@@ -55,9 +56,7 @@ object BranchIndexer {
   }
 
   def mapResponseTo[B](implicit cl: ConverterLike[String, B]): Transition[HttpResponse[String], B] = {
-    case HttpResponse(body, code, headers) =>
-      if(code == 200) mapTo[String, B](cl)(body)
-      else Failure(s"Connection failure: $code " + mapTo[String, B](cl)(body))
+    case HttpResponse(body, code, headers) => mapTo[String, B](cl)(body)
   }
 
   def mapTo[A, B](implicit cl: ConverterLike[A, B]): Transition[A, B] = a => Try(cl.convert(a)) match {

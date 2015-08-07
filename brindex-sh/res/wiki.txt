@@ -14,3 +14,9 @@ Category codes:
     M - Model
     S - Security
 
+Status values:
+    Open 
+    Pending
+    WIP
+    Closed
+
