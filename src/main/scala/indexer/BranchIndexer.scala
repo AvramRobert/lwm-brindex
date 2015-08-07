@@ -17,28 +17,29 @@ object BranchIndexer {
 
   def commandLineParse: Transition[String, Vector[Command]] = s => CommandLineParser.parse(s)
 
-  def json()(implicit cl: ConverterLike[String, JsValue]): Transition[String, JsValue] = s => Try(cl.convert(s)) match {
-    case scala.util.Success(js) => Success(js)
-    case scala.util.Failure(e) => Failure(e.getMessage)
-  }
-
+  def json()(implicit cl: ConverterLike[String, JsValue]): Transition[String, JsValue] = mapTo[String, JsValue]
 
   def fromJson(): Transition[JsValue, String] = js => {
     js.asOpt[JsObject] match {
       case Some(jsObj) => Success {
-        jsObj.value.map {
-          case (s, v) => String.format("%10s  %s", (v \ "index").as[String], s"${(v \ "task").as[String]} [${(v \ "status").as[String]}]")
-        }.mkString("\n")
+        (jsObj.value.toVector.sortBy(_._1) map {
+          case (k, v) => String.format("%10s   %s  %s", k, s"${(v \ "task").as[String]} [${(v \ "status").as[String]}]  ->", s"${(v \ "card").as[String]}")
+        }).mkString("\n")
       }
       case None => Failure("No viable input received while parsing")
     }
+  }
+
+  def fromFile(path: String): Transition[String, String] = s => Try(scala.io.Source.fromFile(path)) match {
+    case util.Success(d) => Success(d.mkString)
+    case util.Failure(e) => Failure(e.getMessage)
   }
 
   def postJson[B](uri: String)(implicit cl: ConverterLike[String, B]): Transition[JsValue, B] = js => {
     (request(uri).map(_
       .postData(js.toString())
       .header("content-type", "application/json")
-      .asString) ~> mapTo[B]).contained("")
+      .asString) ~> mapResponseTo[B]).contained("")
   }
 
   def putJson[B](uri: String)(implicit cl: ConverterLike[String, B]): Transition[JsValue, B] = js => {
@@ -46,19 +47,22 @@ object BranchIndexer {
       .postData(js.toString())
       .method("PUT")
       .header("content-type", "application/json")
-      .asString) ~> mapTo[B]).contained("")
+      .asString) ~> mapResponseTo[B]).contained("")
   }
 
   def get[B](uri: String)(implicit cl: ConverterLike[String, B]): Transition[String, B] = s => {
-    (request(uri).map(_.asString) ~> mapTo[B]).contained(s)
+    (request(uri).map(_.asString) ~> mapResponseTo[B]).contained(s)
   }
 
-
-  def mapTo[B](implicit cl: ConverterLike[String, B]): Transition[HttpResponse[String], B] = {
+  def mapResponseTo[B](implicit cl: ConverterLike[String, B]): Transition[HttpResponse[String], B] = {
     case HttpResponse(body, code, headers) =>
-      if (code == 200) Success(cl.convert(body))
-      else Failure(s"Connection failure: $code " + cl.convert(body))
-    case _ => Failure("Problem with connection")
+      if(code == 200) mapTo[String, B](cl)(body)
+      else Failure(s"Connection failure: $code " + mapTo[String, B](cl)(body))
+  }
+
+  def mapTo[A, B](implicit cl: ConverterLike[A, B]): Transition[A, B] = a => Try(cl.convert(a)) match {
+    case util.Success(v) => Success(v)
+    case util.Failure(e) => Failure(e.getMessage)
   }
 
   def request(uri: String): Transition[String, HttpRequest] = s => success(Http(uri + s))(s)
@@ -90,11 +94,11 @@ object code extends Transient[String, String] with Schematic[String, String => S
       ("r", s => "\"role\": \"" + s + "\" "),
       ("c", s => "\"category\": \""+ s +"\" "),
       ("task", s => "\"task\": \""+ s +"\" "),
-      ("status", s => "\"status\":\""+ s +"\"")
-
+      ("status", s => "\"status\":\""+ s +"\""),
+      ("card", s => "\"card\":\"https://cgn-lwm.leankit.com/Boards/View"+ s +"\"")
     )
 
-    override def order: IndexedSeq[String] = IndexedSeq("r", "c", "task", "status")
+    override def order: IndexedSeq[String] = IndexedSeq("r", "c", "task", "status", "card")
   }
 
   override def transition: Transition[String, String] = sconcat.map(_.mkString("{", "," , "}"))
@@ -120,16 +124,16 @@ object find extends Transient[String, String] with Schematic[String, String => S
       override def rules: Map[String, (String) => String] = Map(
         ("index", s => "\"index\": \"LWM-"+ s +"\" "),
         ("task", s => "\"task\": \""+ s +"\" "),
-        ("status", s => "\"status\":\""+ s +"\"")
+        ("status", s => "\"status\":\""+ s +"\""),
+        ("card", s => "\"card\":\"https://cgn-lwm.leankit.com/Boards/View"+ s +"\"")
       )
 
-      override def order: IndexedSeq[String] = IndexedSeq("index", "task", "status")
+      override def order: IndexedSeq[String] = IndexedSeq("index", "task", "status", "card")
     }
 
     override def transition: Transition[String, String] = sconcat.map(_.mkString("{", ",", "}"))
 
   }
-
 }
 
 

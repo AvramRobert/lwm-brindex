@@ -22,8 +22,6 @@ class CommandParser extends SimpleRegexParser[Command] {
 trait SimpleRegexParser[+A] {
   def regex: Regex
 
-
-  //TODO: FIX. The current scheme checks correctly but fails when passed a composed value that belongs to a single parameter but happens to be split by ` `
   def parse(s: String): Result[Vector[A]] =
     Try(regex findAllIn s toVector) match {
       case util.Success(v) =>

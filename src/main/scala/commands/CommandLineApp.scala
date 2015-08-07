@@ -14,7 +14,10 @@ trait CommandLineApp extends App {
     run(args(0)) {
       Command(args(0), args.slice(1, args.length).mkString(" "))
     } match {
-      case Success(s) => println(s"Success:\n$s")
+      case Success(s) => {
+        println("Success:")
+        println(s)
+      }
       case Failure(e) => println(s"Failed:\n$e")
     }
   }

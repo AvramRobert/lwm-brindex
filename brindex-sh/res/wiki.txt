@@ -1,0 +1,16 @@
+
+Role codes:
+    1 - Nutzer
+    2 - Administrator
+    3 - Mitarbeiter
+    4 - Hilfskraft
+    5 - Student
+    6 - Entwickler
+
+Category codes:
+    R - REST
+    B - Business-Logic
+    D - Database
+    M - Model
+    S - Security
+

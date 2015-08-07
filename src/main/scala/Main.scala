@@ -7,17 +7,21 @@ import f.ConverterLike._
 object Main extends CommandLineApp {
 
   override def commandSyntax: Map[String, Set[String]] = Map(
-    ("add", Set("r", "c", "task", "status")),
+    ("add", Set("r", "c", "task", "status", "card")),
     ("list", Set()),
+    ("help", Set()),
+    ("wiki", Set()),
     ("find", Set("p")),
-    ("edit", Set("index", "task", "status"))
+    ("edit", Set("index", "task", "status", "card"))
   )
 
   override def run: (String) => Transition[Command, _] = {
-    case "add" => syntaxCheck() & code() ~> json() ~> postJson("http://192.168.0.100:9000/indexer") ~> fromJson()
-    case "list" => syntaxCheck() & get("http://192.168.0.100:9000/cmd/indexer") ~> fromJson()
-    case "find" => syntaxCheck() & find() ~> get("http://192.168.0.100:9000/cmd/indexer/find") ~> fromJson()
-    case "edit" => syntaxCheck() & edit() ~> json() ~> putJson("http://192.168.0.100:9000/indexer") ~> fromJson()
+    case "add" => syntaxCheck() & code() ~> json() ~> postJson("https://praktikum.gm.fh-koeln.de/indexer") ~> fromJson()
+    case "list" => syntaxCheck() & get("https://praktikum.gm.fh-koeln.de/cmd/indexer") ~> fromJson()
+    case "find" => syntaxCheck() & find() ~> get("https://praktikum.gm.fh-koeln.de/cmd/indexer/find") ~> fromJson()
+    case "edit" => syntaxCheck() & edit() ~> json() ~> putJson("https://praktikum.gm.fh-koeln.de/indexer") ~> fromJson()
+    case "help" => syntaxCheck() & fromFile("res/help.txt")
+    case "wiki" => syntaxCheck() & fromFile("res/wiki.txt")
     case _ => failed("Unknown action")
   }
 }
