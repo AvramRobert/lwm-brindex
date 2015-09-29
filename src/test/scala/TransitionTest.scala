@@ -4,15 +4,15 @@ import trans.Transition._
 
 class TransitionTest extends SimpleUnitSpec {
 
-  def stringTransition: Transition[String, String] = s => Success(s)
+  def stringTransition: String -> String = s => Success(s)
 
-  def stringFailedTransition: Transition[String, String] = s => Failure("Transition not possible")
+  def stringFailedTransition: String -> String = s => Failure("Transition not possible")
 
-  def stringIntTransition: Transition[String, Int] = s => Success(s.toInt)
+  def stringIntTransition: String -> Int = s => Success(s.toInt)
 
-  def intStringTransition: Transition[Int, String] = i => Success(i.toString)
+  def intStringTransition: Int -> String = i => Success(i.toString)
 
-  def listIntTransition: Transition[Int, List[Int]] = i => Success((0 to i).toList)
+  def listIntTransition: Int -> List[Int] = i => Success((0 to i).toList)
 
   def sumMonoid = new Monoid[Int] {
     override def append(v1: Int, v2: => Int): Int = v1 + v2

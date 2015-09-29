@@ -15,7 +15,7 @@ object Main extends CommandLineApp {
     ("edit", Set("index", "task", "status", "card"))
   )
 
-  override def run: (String) => Transition[Command, _] = {
+  override def run: (String) => Command -> _ = {
     case "add" => syntaxCheck() & code() ~> json() ~> postJson("https://praktikum.gm.fh-koeln.de/indexer") ~> fromJson()
     case "list" => syntaxCheck() & get("https://praktikum.gm.fh-koeln.de/cmd/indexer") ~> fromJson()
     case "find" => syntaxCheck() & find() ~> get("https://praktikum.gm.fh-koeln.de/cmd/indexer/find") ~> fromJson()

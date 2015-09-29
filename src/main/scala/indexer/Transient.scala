@@ -1,13 +1,14 @@
 package indexer
 
 import schema.AbstractSchema
+import trans.Transition.->
 
 
 trait Transient[A, +B] { self: Schematic[_, _] =>
 
-  def apply(): trans.Transition.Transition[A, B] = transition
+  def apply(): A -> B = transition
 
-  def transition: trans.Transition.Transition[A, B]
+  def transition: A -> B
 }
 
 

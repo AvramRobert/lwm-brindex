@@ -3,7 +3,7 @@ package commands
 import indexer.BranchIndexer.PartialSyntaxChecker
 import schema.AbstractSchema
 import trans.{Failure, Success}
-import trans.Transition.Transition
+import trans.Transition.->
 
 case class Command(parameter: String, value: String)
 
@@ -32,5 +32,5 @@ trait CommandLineApp extends App {
 
   def commandSyntax: Map[String, Set[String]]
 
-  def run: String => Transition[Command, _]
+  def run: String => Command -> _
 }
