@@ -13,6 +13,7 @@ Category codes:
     D - Database
     M - Model
     S - Security
+    F - Frontend
 
 Status values:
     Open 
